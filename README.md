@@ -11,8 +11,9 @@
 </p>
 
 <p align="center">
-  <img alt="Imagem do projeto" src="https://imgur.com/NLrZJ3m.png" width="800px">
+  <img alt="Imagem do projeto" src="https://i.imgur.com/sM633tV.png" width="800px">
 </p>
+
 
 <p align="center">
   <i>A Calculadora Simples é ideal para quem busca praticidade e eficiência em cálculos rápidos, com um visual atraente e responsivo! 💛✨</i>
