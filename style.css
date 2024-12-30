@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(imagem/pexels-didsss-7450361.jpg);
+    background-size: cover; /* A imagem vai cobrir toda a tela */
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Evita rolagem extra */
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    width: 100vw; /* Ocupa toda a largura da tela */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: relative;
+}
+
+/* Estilo para a calculadora */
+#calculadora-container {
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: column; /* Organiza os elementos dentro do container em uma coluna */
+    justify-content: center; /* Garante que os elementos sejam centralizados verticalmente */
+    align-items: center; /* Garante que os elementos sejam centralizados horizontalmente */
+    padding: 20px; /* Adiciona um espaçamento interno ao container */
+    border: 2px solid rgba(255, 255, 255, .2); /* Adiciona uma borda sutil de 2px de espessura */
+    background-color: transparent; /* Define o fundo como transparente */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; /* Aplica uma sombra suave para destacar o container */
+    width: 26%; /* Define que a largura do container será 25% da tela */
+    height: 80%; /* Define que a altura do container será 80% da altura da tela */
+    border-radius: 5%; /* Arredonda os cantos do container com um raio de 6% */
+    position: absolute; /* Posiciona o container de forma absoluta dentro do seu elemento pai */
+    z-index: 1; /* Garante que o container apareça acima de outros elementos com menor valor de z-index */
+    backdrop-filter: blur(90px); /* Aplica um desfoque ao fundo atrás do container */
+}
+
+
+/* Estilo para o resultado da calculadora */
+#resultado {
+    width: 100%;
+    max-width: 400px;
+    background-color: #00000093;
+    padding: 30px;
+    text-align: right;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin: 0 auto 35px;
+    color: #fff;
+}
+
+/* Estilo para as linhas de botões usando grid */
+.linha-1, .linha-2, .linha-3, .linha-4, .linha-5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;    
+}
+
+/* Estilo para os botões */
+button {
+    padding: 42px; /* Adiciona 15px de preenchimento dentro do botão */
+    margin: 5px; /* Adiciona 5px de espaço entre os botões */
+    border: none; /* Remove a borda padrão dos botões */
+    border-radius: 7px; /* Arredonda as bordas do botão com raio de 7px */
+    cursor: pointer; /* Muda o cursor para uma mãozinha quando o usuário passa o mouse sobre o botão */
+    font-size: 1.8rem; /* Define o tamanho da fonte do texto do botão */
+    background-color: #5f5486b0; /* Define a cor de fundo do botão (tom de roxo) */
+    transition: background-color 0.3s ease; /* Cria uma transição suave de 0.3 segundos quando a cor de fundo mudar */
+    display: flex; /* Usa o modelo flexbox para o layout do botão */
+    align-items: center; /* Alinha o conteúdo do botão verticalmente ao centro */
+    justify-content: center; /* Alinha o conteúdo do botão horizontalmente ao centro */
+    box-sizing: border-box; /* Garante que o padding e a borda não aumentem o tamanho do botão */
+    width: 60px; /* Define a largura do botão como 60px */
+    height: 60px; /* Define a altura do botão como 60px */
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Efeito de hover para todos os botões */
+button:hover {
+    background-color: #9b7eab; /* Cor de fundo quando o mouse passa sobre o botão */
+}
+
+/* Estilo para o botão C */
+.c-button {
+    background-color: #966b8d;
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Estilo para o botão CE */
+.ce-button {
+    background-color: #966b8d;
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Estilo para o botão de igual */
+.igual-button {
+    background-color: #966b8d;
+    color: #000000;
+    font-size: 2rem;
+    width: 189px; /* Ajuste a largura do botão de igual */
+    height: 60px;
+    grid-column: span 2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Efeito de hover para o botão de igual */
+.igual-button:hover {
+    background-color: #d8a8be; /* Cor quando o mouse passa sobre o botão de igual */
+}
+
+@media (max-width: 768px) {
+    #calculadora-container {
+        width: 90%; /* Ajusta a largura do container para 80% da tela em telas menores */
+        height: 90%; /* Ajusta a altura do container para 80% da tela em telas menores */
+    }
+}

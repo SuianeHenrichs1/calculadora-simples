@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="azul.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div id="imagem">
+            <img src="imagem/pexels-didsss-7450361.jpg" alt="Imagem decorativa">
+        </div>
+        <div id="calculadora-container">
+            <div id="calculadora">
+                <div id="resultado">0</div>
+                <div class="linha-1">
+                    <button class="c-button" onclick="limpar()">C</button>
+                    <button class="ce-button" onclick="apagar()">CE</button>
+                    <button onclick="adicionar('%')">%</button>
+                    <button onclick="adicionar('/')">/</button>
+                </div>
+                <div class="linha-2">
+                    <button onclick="adicionar('7')">7</button>
+                    <button onclick="adicionar('8')">8</button>
+                    <button onclick="adicionar('9')">9</button>
+                    <button onclick="adicionar('*')">x</button>
+                </div>
+                <div class="linha-3">
+                    <button onclick="adicionar('4')">4</button>
+                    <button onclick="adicionar('5')">5</button>
+                    <button onclick="adicionar('6')">6</button>
+                    <button onclick="adicionar('-')">-</button>
+                </div>
+                <div class="linha-4">
+                    <button onclick="adicionar('1')">1</button>
+                    <button onclick="adicionar('2')">2</button>
+                    <button onclick="adicionar('3')">3</button>
+                    <button onclick="adicionar('+')">+</button>
+                </div>
+                <div class="linha-5">
+                    <button onclick="adicionar('.')">.</button>
+                    <button onclick="adicionar('0')">0</button>
+                    <button class="igual-button" onclick="calcular()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>
+
