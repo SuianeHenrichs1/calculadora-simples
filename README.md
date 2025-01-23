@@ -48,3 +48,8 @@ O layout foi desenvolvido de maneira responsiva para garantir uma ótima experi�
 ## 📄 Licença
 
 Este projeto está licenciado sob a **Licença MIT**. Você pode ver mais detalhes sobre os termos e permissões na [LICENSE](./LICENSE).
+
+# ✨ Autora
+
+| [<img loading="lazy" src="https://github.com/SuianeHenrichs1.png" width=115><br><sub>Suiane Henrichs</sub>](https://github.com/SuianeHenrichs1) |
+| :---: |
